@@ -4,9 +4,9 @@ def count_larger_than_prev(lst):
         contents = numbers.read()
         num_list = contents.splitlines()
         for i in range(1, len(num_list)):
-            if num_list[i] > num_list[i-1]:
+            if int(num_list[i]) > int(num_list[i-1]):
                 counter += 1
-        print(counter)
+        print(counter, len(num_list))
 
 filename = "numbers.txt"
 count_larger_than_prev(filename)
