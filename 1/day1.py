@@ -6,7 +6,7 @@ def count_larger_than_prev(lst):
         for i in range(1, len(num_list)):
             if int(num_list[i]) > int(num_list[i-1]):
                 counter += 1
-        print(counter, len(num_list))
+        print(counter)
 
 filename = "numbers.txt"
 count_larger_than_prev(filename)
